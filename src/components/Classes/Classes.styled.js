@@ -160,6 +160,9 @@ export const PlaceMentor = styled.p`
 `;
 
 export const BtnWrapper = styled.div`
+  /* display: none;
+  margin-top: 26px; */
+
   position: absolute;
   bottom: 0;
   right: -3px;
@@ -186,6 +189,7 @@ export const BtnWrapper = styled.div`
   z-index: -5;
 
   ${Article}:hover & {
+    /* display: block; */
     opacity: 1;
     transform: translateY(100%);
     transition: all 0.25s ease-out;
