@@ -61,6 +61,39 @@ export const Article = styled.article`
   }
 `;
 
+export const BtnWrapper = styled.div`
+  display: none;
+
+  position: absolute;
+  bottom: 0;
+  right: -3px;
+
+  width: 280px;
+
+  padding-top: 12px;
+  padding-bottom: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  background: var(--card-bg-btn-color);
+  border-bottom-right-radius: var(--br-card);
+  border-bottom-left-radius: var(--br-card);
+
+  border-bottom: 3px solid var(--card-separator-line-color);
+  border-right: 3px solid var(--card-separator-line-color);
+  border-left: 3px solid var(--card-separator-line-color);
+
+  transform: translateY(0);
+
+  z-index: 5;
+
+  ${Article}:hover & {
+    display: block;
+
+    transform: translateY(100%);
+  }
+`;
+
 export const Thumb = styled.div`
   position: relative;
   margin-bottom: 24px;
@@ -157,41 +190,4 @@ export const PlaceMentor = styled.p`
   font-size: 12px;
 
   color: var(--secondary-text-color);
-`;
-
-export const BtnWrapper = styled.div`
-  /* display: none;
-  margin-top: 26px; */
-
-  position: absolute;
-  bottom: 0;
-  right: -3px;
-
-  width: 280px;
-
-  padding-top: 12px;
-  padding-bottom: 20px;
-  padding-left: 12px;
-  padding-right: 12px;
-
-  background: var(--card-bg-btn-color);
-  border-bottom-right-radius: var(--br-card);
-  border-bottom-left-radius: var(--br-card);
-
-  border-bottom: 3px solid var(--card-separator-line-color);
-  border-right: 3px solid var(--card-separator-line-color);
-  border-left: 3px solid var(--card-separator-line-color);
-
-  opacity: 0;
-
-  transform: translateY(0);
-  transition: all 0.25s ease-out;
-  z-index: -5;
-
-  ${Article}:hover & {
-    /* display: block; */
-    opacity: 1;
-    transform: translateY(100%);
-    transition: all 0.25s ease-out;
-  }
 `;
