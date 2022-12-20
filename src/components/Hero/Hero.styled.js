@@ -141,7 +141,7 @@ export const HeroStudentWrapper = styled.div`
 
   display: flex;
 
-  z-index: 99;
+  z-index: 1;
 `;
 
 export const HeroImgList = styled.ul`
